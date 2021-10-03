@@ -1,0 +1,17 @@
+{
+  "type": "sequence",
+  "children": [
+    {
+      "name": "ssd",
+      "outputProcessorClass": "ai.djl.serving.ensemble.SubImage"
+    },
+    {
+      "type": "parallel",
+      "children": [
+        {
+          "name": "pose"
+        }
+      ]
+    }
+  ]
+}

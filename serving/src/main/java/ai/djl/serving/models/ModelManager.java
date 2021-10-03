@@ -243,7 +243,7 @@ public final class ModelManager {
      * Runs an inference job by assigning the job to the next free worker.
      *
      * @param job an inference job to be executed
-     * @return {@code true} if submit success, false otherwise.
+     * @return a {@code CompletableFuture} instance
      */
     public CompletableFuture<Output> runJob(Job job) {
         return wlm.runJob(job);

@@ -72,7 +72,7 @@ public class WorkLoadManager {
      * necessary.
      *
      * @param job an inference job to be executed.
-     * @return {@code true} if submit success, false otherwise.
+     * @return a {@code CompletableFuture} instance
      */
     public CompletableFuture<Output> runJob(Job job) {
         CompletableFuture<Output> result = new CompletableFuture<>();
